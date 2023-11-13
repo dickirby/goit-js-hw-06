@@ -7,7 +7,6 @@ function getRandomHexColor() {
 const divCtrls = document.querySelector("#controls");
 const containerBox = document.querySelector("#boxes");
 function createBoxes(amount) {
-  containerBox.innerHTML = "";
   amount = Number(divCtrls.querySelector("input").value);
   let size = 30;
   for (let i = 0; i < amount; i += 1) {

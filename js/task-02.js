@@ -6,10 +6,11 @@ const ingredients = [
   "Herbs",
   "Condiments",
 ];
-
+const allelems = [];
 ingredients.forEach((element) => {
   const elem = document.createElement("li");
   elem.textContent = element;
   elem.classList.add("item");
-  document.querySelector("#ingredients").append(elem);
+  allelems.push(elem);
 });
+document.querySelector("#ingredients").append(...allelems);
